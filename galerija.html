@@ -170,7 +170,7 @@ class Component extends DCLogic {
       ["794025074_18423308938148430_5789354008927275799", "Elegancija u svakom detalju"],
       ["809910446_18424843549148430_231411041976582022", ""]
     ];
-    const photos = files.map(([f, caption], i) => ({ src: "slike/galerija/" + String(i + 1).padStart(2, "0") + ".jpg", caption }));
+    const photos = files.map(([f, caption], i) => ({ src: "galerija-" + String(i + 1).padStart(2, "0") + ".jpg", caption }));
     return { photos };
   }
 }
